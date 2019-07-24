@@ -13,7 +13,6 @@ class Owner
     @dogs = []
     @pets = { dogs: [], cats: []}
     @@owners << self
-    binding.pry
   end
 
   def self.all
