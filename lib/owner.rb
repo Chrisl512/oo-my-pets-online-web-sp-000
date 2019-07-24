@@ -65,7 +65,7 @@ class Owner
     pets_arr = dogs + cats
     pets_arr.each do |pet|
       pet.mood = "nervous"
-
+      pets.owner = nil
     end
      pets.clear
   end
