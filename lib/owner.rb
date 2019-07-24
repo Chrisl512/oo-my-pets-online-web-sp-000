@@ -11,7 +11,7 @@ class Owner
     @name = name
     @cats = []
     @dogs = []
-    #@pets = { dogs: [], cats: []}
+    @pets = { dogs: [], cats: []}
     @@owners << self
   end
 
@@ -62,7 +62,8 @@ class Owner
   end
 
   def sell_pets
-    pets.each do |type, pet|
+    pets_arr = dogs + pets
+    pets_arr.each do |pet|
       pet.each do |p|
         p.mood = "nervous"
       end
