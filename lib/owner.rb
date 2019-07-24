@@ -11,7 +11,7 @@ class Owner
     @name = name
     @cats = []
     @dogs = []
-    @pets = { dogs: [], cats: []}
+    #@pets = { dogs: [], cats: []}
     @@owners << self
   end
 
